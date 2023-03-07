@@ -1424,7 +1424,7 @@ library_add_check
 <div class="kanban-box">
 <div class="task-board-header">
   <div class="avatar">
-    <a href="" class="rounded-circle border border-white" data-bs-toggle="modal" data-bs-target="#assign_user"><i class="fas fa-square"></i></a>
+    <a href="" class="rounded-circle border border-white" data-bs-toggle="modal" data-bs-target="#status_user"><i class="fas fa-square"></i></a>
 </div>
 <span class="status-title"><a href="task-view.html">Website redesign</a></span>
 <div class="dropdown kanban-task-action">
@@ -1676,6 +1676,72 @@ library_add_check
 </div>
 
 
+
+
+<div id="status_user" class="modal custom-modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title">Assign the user to this project</h5>
+  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  
+    <div>
+    <ul class="chat-user-list">
+    <li>
+    <a href="#">
+    <div class="media d-flex">
+    <div class="media-body align-self-center text-nowrap">
+    <div class="user-name">TO DO</div>
+    </div>
+    </div>
+    </a>
+    </li>
+    
+    <li>
+      <a href="#">
+      <div class="media d-flex">
+      <div class="media-body align-self-center text-nowrap">
+      <div class="user-name">IN PROGRESS</div>
+      </div>
+      </div>
+      </a>
+      </li>
+    
+      <li>
+        <a href="#">
+        <div class="media d-flex">
+        <div class="media-body align-self-center text-nowrap">
+        <div class="user-name">DONE</div>
+        </div>
+        </div>
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <div class="media d-flex">
+          <div class="media-body align-self-center text-nowrap">
+          <div class="user-name">COMPLETE</div>
+          </div>
+          </div>
+          </a>
+          </li>
+    
+    </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+
+
+
+
 <div id="assign_user" class="modal custom-modal fade" role="dialog">
 <div class="modal-dialog modal-dialog-centered" role="document">
 <div class="modal-content">
@@ -1687,50 +1753,80 @@ library_add_check
 </div>
 <div class="modal-body">
 
-  <div>
-  <ul class="chat-user-list">
-  <li>
-  <a href="#">
-  <div class="media d-flex">
-  <div class="media-body align-self-center text-nowrap">
-  <div class="user-name">TO DO</div>
-  </div>
-  </div>
-  </a>
-  </li>
-  
-  <li>
-    <a href="#">
-    <div class="media d-flex">
-    <div class="media-body align-self-center text-nowrap">
-    <div class="user-name">IN PROGRESS</div>
-    </div>
-    </div>
-    </a>
-    </li>
-  
-    <li>
-      <a href="#">
-      <div class="media d-flex">
-      <div class="media-body align-self-center text-nowrap">
-      <div class="user-name">DONE</div>
-      </div>
-      </div>
-      </a>
-      </li>
-      <li>
-        <a href="#">
-        <div class="media d-flex">
-        <div class="media-body align-self-center text-nowrap">
-        <div class="user-name">COMPLETE</div>
-        </div>
-        </div>
-        </a>
-        </li>
-  
-  </ul>
-  </div>
-  </div>
+<div class="input-group m-b-30">
+<input placeholder="Search a user to assign" class="form-control search-input" type="text">
+<button class="btn btn-primary">Search</button>
+</div>
+<div>
+<ul class="chat-user-list">
+<li>
+<a href="#">
+<div class="media d-flex">
+<span class="avatar flex-shrink-0"><img alt="" src="assets/img/profiles/avatar-09.jpg"></span>
+<div class="media-body align-self-center text-nowrap">
+<div class="user-name">Richard Miles</div>
+<span class="designation">Web Developer</span>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media d-flex">
+<span class="avatar flex-shrink-0"><img alt="" src="assets/img/profiles/avatar-10.jpg"></span>
+<div class="media-body align-self-center text-nowrap">
+<div class="user-name">John Smith</div>
+<span class="designation">Android Developer</span>
+</div>
+</div>
+</a>
+</li>
+<li>
+<a href="#">
+<div class="media d-flex">
+<span class="avatar flex-shrink-0">
+<img alt="" src="assets/img/profiles/avatar-16.jpg">
+</span>
+<div class="media-body align-self-center text-nowrap">
+<div class="user-name">Jeffery Lalor</div>
+<span class="designation">Team Leader</span>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-section">
+<button class="btn btn-primary submit-btn">Submit</button>
+</div>
+</div>
 </div>
 </div>
 </div>
