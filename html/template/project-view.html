@@ -1398,6 +1398,19 @@ library_add_check
 <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#edit_project"><i class="fa fa-plus"></i> Edit Project</a>
 </div>
 </div>
+<div class="row board-view-header mt-md-3">
+  <div class="col-12">
+    <div class="pro-progress">
+    <div class="pro-progress-bar">
+    <h4>Progress</h4>
+    <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 20%"></div>
+    </div>
+    <span>20%</span>
+    </div>
+    </div>
+    </div>
+</div>
 </div>
 
 <div class="row">
@@ -1419,12 +1432,12 @@ library_add_check
     <li class="task">
     <div class="task-container">
     <div class="avatar">
-        <a href="" class="avatar-title rounded-circle border border-white" data-bs-toggle="modal" data-bs-target="#assign_user"><i class="fa fa-plus"></i></a>
+        <a href="" class="rounded-circle border border-white" data-bs-toggle="modal" data-bs-target="#assign_user"><i class="fas fa-square"></i></a>
     </div>
     <a class="task-label"  href="task-board.html">Patient appointment booking</a>
     <span class="task-action-btn task-btn-right">
-    <span class="action-circle large" title="Assign">
-    <i class="material-icons">person_add</i>
+    <span class="action-circle large" title="Edit">
+    <a href="" data-bs-toggle="modal" data-bs-target="#edit_project" ><i class="fa fa-user-plus"></i></a>
     </span>
     <span class="action-circle large delete-btn" title="Delete Task">
     <i class="material-icons">delete</i>
@@ -1470,12 +1483,9 @@ library_add_check
 <td>Cost:</td>
 <td class="text-end">$1200</td>
 </tr>
+
 <tr>
-<td>Total Hours:</td>
-<td class="text-end">100 Hours</td>
-</tr>
-<tr>
-<td>Created:</td>
+<td>In Date:</td>
 <td class="text-end">25 Feb, 2019</td>
 </tr>
 <tr>
@@ -1496,42 +1506,23 @@ library_add_check
 </div>
 </td>
 </tr>
-<tr>
-<td>Created by:</td>
-<td class="text-end"><a href="profile.html">Barry Cuda</a></td>
-</tr>
+
 <tr>
 <td>Status:</td>
 <td class="text-end">Working</td>
 </tr>
 </tbody>
 </table>
-<p class="m-b-5">Progress <span class="text-success float-end">40%</span></p>
-<div class="progress progress-xs mb-0">
-<div class="progress-bar bg-success" role="progressbar" data-bs-toggle="tooltip" title="40%" style="width: 40%"></div>
-</div>
+
 </div>
 </div>
 <div class="card project-user">
 <div class="card-body">
-<h6 class="card-title m-b-20">Assigned Leader <button type="button" class="float-end btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#assign_leader"><i class="fa fa-plus"></i> Add</button></h6>
+<h6 class="card-title m-b-20">Assigned Project Manager </h6>
 <ul class="list-box">
+
 <li>
-<a href="profile.html">
-<div class="list-item">
-<div class="list-left">
-<span class="avatar"><img alt="" src="assets/img/profiles/avatar-11.jpg"></span>
-</div>
-<div class="list-body">
-<span class="message-author">Wilmer Deluna</span>
-<div class="clearfix"></div>
-<span class="message-content">Team Leader</span>
-</div>
-</div>
-</a>
-</li>
-<li>
-<a href="profile.html">
+<a href="#">
 <div class="list-item">
 <div class="list-left">
 <span class="avatar"><img alt="" src="assets/img/profiles/avatar-01.jpg"></span>
@@ -1539,7 +1530,7 @@ library_add_check
 <div class="list-body">
 <span class="message-author">Lesley Grauer</span>
 <div class="clearfix"></div>
-<span class="message-content">Team Leader</span>
+<span class="message-content">Project Manager</span>
 </div>
 </div>
 </a>
@@ -1551,7 +1542,6 @@ library_add_check
 <div class="card-body">
 <h6 class="card-title m-b-20">
 Assigned users
-<button type="button" class="float-end btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#assign_user"><i class="fa fa-plus"></i> Add</button>
 </h6>
 <ul class="list-box">
 <li>
@@ -1782,6 +1772,8 @@ Assigned users
       </div>
       </div>
     </div>
+
+
 <div class="submit-section">
 <button class="btn btn-primary submit-btn">Save</button>
 </div>
